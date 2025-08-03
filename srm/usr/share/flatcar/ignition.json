@@ -1,0 +1,10 @@
+{
+  "ignition": {
+    "config": {
+      "replace": {
+        "source": "http://autoinstall.homelab.lan/ignition/ignition.json"
+      }
+    },
+    "version": "3.3.0"
+  }
+}

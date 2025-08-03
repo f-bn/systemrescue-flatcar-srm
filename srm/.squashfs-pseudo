@@ -1,0 +1,7 @@
+/usr                             m 755 root root
+/usr/local                       m 755 root root
+/usr/local/bin                   m 755 root root
+/usr/local/bin/flatcar-install   m 755 root root
+/usr/share                       m 755 root root
+/usr/share/flatcar               m 755 root root
+/usr/share/flatcar/ignition.json m 0644 root root
