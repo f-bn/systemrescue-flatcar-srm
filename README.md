@@ -10,16 +10,16 @@ More informations about SystemRescue SRM modules: https://www.system-rescue.org/
 
 * Unpack SystemRescue ISO:
   ```shell
-  $ ./bin/sysrescue-customize --unpack --source systemrescue-12.01-amd64.iso --dest systemrescue/
+  ./bin/sysrescue-customize --unpack --source systemrescue-12.01-amd64.iso --dest systemrescue/
   ```
 * Edit the `srm/` folder according to your needs (e.g add other tools, scripts, files...)
 * Rebuild the ISO to include the SRM:
   ```shell
-  $ ./bin/sysrescue-customize --rebuild --srm-dir srm/ --source systemrescue/ --dest systemrescue-custom.iso --overwrite
+  ./bin/sysrescue-customize --rebuild --srm-dir srm/ --source systemrescue/ --dest systemrescue-custom.iso --overwrite
   ```
 * Boot into the custom SystemRescue ISO and then install Flatcar:
   ```shell
-  # flatcar-install -d <device> -C <channel> -i /usr/share/flatcar/ignition.json
+  flatcar-install -d <device> -C <channel> -i /usr/share/flatcar/ignition.json
   ```
 * And voilà !
 
